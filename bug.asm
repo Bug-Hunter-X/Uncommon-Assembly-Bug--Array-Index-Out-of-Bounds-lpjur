@@ -1,0 +1,1 @@
+mov eax, [ebx+ecx*4] ; This instruction assumes that ecx is a valid index into an array pointed to by ebx.  However, if ecx is too large or negative, it will lead to accessing memory outside of the allocated array, causing a segmentation fault or other unpredictable behavior.  In particular, there's no bound checking here.
